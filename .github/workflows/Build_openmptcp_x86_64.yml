@@ -16,7 +16,8 @@ jobs:
       matrix:
         OMR_TARGET: [x86, x86_64, r5s]
         OMR_KERNEL: [6.12]
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     continue-on-error: true
 
     steps:
