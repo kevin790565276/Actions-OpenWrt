@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         OMR_TARGET: [x86_64] # [x86_64, r5s]
-        OMR_KERNEL: [6.12]
+        OMR_KERNEL: [6.11]
     runs-on: ubuntu-22.04
     # continue-on-error: true
 
