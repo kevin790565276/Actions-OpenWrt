@@ -58,7 +58,7 @@ jobs:
           OMR_TARGET: ${{ matrix.OMR_TARGET }}
           OMR_KERNEL: ${{ matrix.OMR_KERNEL }}
         run: |
-          OMR_KERNEL="${OMR_KERNEL}" OMR_FEED_SRC="master" sh build.sh prepare {tools,toolchain}/install -j$(nproc) || OMR_KERNEL="${OMR_KERNEL}" OMR_FEED_SRC="master" sh build.sh prepare {tools,toolchain}/install -j1 V=s
+          OMR_KERNEL="${OMR_KERNEL}" OMR_FEED_SRC="develop" sh build.sh prepare {tools,toolchain}/install -j$(nproc) || OMR_KERNEL="${OMR_KERNEL}" OMR_FEED_SRC="develop" sh build.sh prepare {tools,toolchain}/install -j1 V=s
 
       - name: Build packages
         working-directory: ../../omr
