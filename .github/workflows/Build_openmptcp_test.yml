@@ -14,10 +14,10 @@ jobs:
   build:
     strategy:
       matrix:
-        OMR_TARGET: [x86, x86_64, r5s]
+        OMR_TARGET: [x86_64] # [x86_64, r5s]
         OMR_KERNEL: [6.12]
     runs-on: ubuntu-22.04
-    continue-on-error: true # 当发布版本时触发该工作流
+    # continue-on-error: true
 
     steps:
       - name: Prepare # 环境准备，安装编译工具
