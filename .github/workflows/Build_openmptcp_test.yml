@@ -1,4 +1,4 @@
-name: openmptcprouter
+name: openmptcprouter-test
 
 on:
   release:
